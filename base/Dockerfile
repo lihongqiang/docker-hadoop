@@ -3,7 +3,9 @@ FROM ubuntu:14.04
 MAINTAINER Lihongqiang <415200973@qq.com>
 
 # install openssh-server, vim and openjdk
-RUN apt-get install -y openssh-server vim openjdk-7-jdk
+RUN apt-get install -y openssh-server 
+RUN apt-get install -y vim
+RUN apt-get install -y openjdk-7-jdk
 
 # set jave environment variable 
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
